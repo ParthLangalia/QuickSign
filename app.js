@@ -1,4 +1,4 @@
-const textcolor = document.getElementById("textchange");
+const textcolor = document.getElementById("textcolor");
 const bgcolor = document.getElementById("bgcolor");
 const fontSize = document.getElementById("fontchange");
 const clearBtn = document.getElementById("clearbtn");
@@ -16,6 +16,8 @@ updateBgColor();
 
 function clearCanvas() {
   canvas.style.backgroundColor = "#fff";
+  bgcolor.value = "#ffffff";
+  textcolor.value = "#000000";
   //need to add text removal also.
 }
 clearBtn.addEventListener("click", clearCanvas);
